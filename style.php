@@ -5,7 +5,7 @@ font-size: 16px;
 font-family: monospace;
 color: #000;
 background-color: #FFF;
-background: #ffffff url("images/miami-trans.png") no-repeat right top fixed;
+background: #ffffff url("miami-trans.png") no-repeat right top fixed;
 background-size:cover;
 }
 
@@ -111,6 +111,8 @@ a:active { color: green; font-weight: bold;}
 </style>
 
 <h1>CSS Navbars</h1>
+
+
 <ul>
 	<li><a href="#home">Home</a></li>
 	<li><a href="#news">News</a></li>
