@@ -9,7 +9,7 @@ background: #ffffff url("miami-trans.png") no-repeat right top fixed;
 background-size:cover;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 font-family:'Shadows Into Light', cursive;
 max-width: 500px;
 background-color: #A2B7CF;
@@ -30,6 +30,14 @@ h3 {
 font-weight: bold;
 text-align: left; /* remove since left is the default*/
 margin-top: 30px;
+}
+
+h4 {
+font-weight: bold;
+text-align: center; /* remove since left is the default*/
+margin-top: 20px;
+color: white;
+background-color: rgba(200, 010, 001, .60);
 }
 
 p {
