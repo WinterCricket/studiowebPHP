@@ -116,6 +116,11 @@ a:active { color: green; font-weight: bold;}
 #centerDoc a {background-color: transparent;}  
 #centerDoc a:link, #centerDoc a:visited  {color: #000; text-decoration: underline;}   
 #centerDoc a:hover { color: #ff0000;  margin-bottom: 0px; } 
+
+.error {
+	color: white;
+	background-color: red;
+}
 </style>
 
 <h1>CSS Navbars</h1>
@@ -127,3 +132,4 @@ a:active { color: green; font-weight: bold;}
 	<li><a href="#contact">Contact</a></li>
 	<li><a href="#about">About</a></li>
 </ul>
+

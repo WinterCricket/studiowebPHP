@@ -36,8 +36,16 @@
 
 		include "style.php";
 
-		echo "The name entered: " . $_POST["name"];
-		echo "<br>The password entered: " . $_POST["password"];
+		$name = $_POST["name"];
+		$password = $_POST["password"];
+		
+
+		if($password != "root") {
+			echo "<h1 class = 'error' >Access denied, you slime ball!</h1>";
+		} else {
+
+			echo "<h2>The password entered: Welcome you son of a bitch!</h2><br>" ; 
+		}
 
 		?>
 
