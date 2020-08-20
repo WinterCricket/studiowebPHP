@@ -9,7 +9,7 @@
 	
 <?php include "style.php" ?>
 	
-	<form method="GET" action="form-response.php">
+	<form method="POST" action="form-response.php">
 
 		Name: <input type="text" name="name">
 		<br>
