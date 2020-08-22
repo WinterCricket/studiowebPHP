@@ -18,7 +18,21 @@
 		
 		Password: <input type="password" name="password">
 		
+		
+		
+		Favorite car:<br> 
+		<select name="fav-car">
+		  <option value="volvo">Volvo</option>
+		  <option value="saab">Saab</option>
+		  <option value="mercedes">Mercedes</option>
+		  <option value="Audi">Audi</option>
+		  <option value="Ford">Ford</option>
+		  <option value="Jeep">Jeep</option>
+		  <option value="Some crappy card brand">Some crappy car brand</option>
+		</select>
+
 		<input type="submit">
+
 		
 
 	</form>

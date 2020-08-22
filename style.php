@@ -70,10 +70,11 @@
 		margin-left: 5px;
 	}
 
-	input {
+	input, select {
 		margin-left: 20px;
 		text-align: center;
 	}
+
 
 	#miamiBuilding {
 		float: right; margin: 10px; margin-bottom: 50px; margin-right:20%
