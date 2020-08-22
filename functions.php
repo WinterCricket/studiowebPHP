@@ -1,6 +1,7 @@
 <?php 
 
-$message = 5 + 6;
+$message = scandir("C:wamp");
+$var;
 
  ?>
 
@@ -17,7 +18,9 @@ $message = 5 + 6;
 
 	<?php 
 
-	echo "<h1>$message</h1>";
+
+	print_r($message) ;
+
 	 ?>
 
 	

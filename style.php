@@ -93,10 +93,10 @@
 	#centerDoc {
 		position: absolute;
 		z-index: 15;
-		padding: 0 0 20px 20px; /*top right bottom left*/
+		padding: 20px 20px/*0 0 */ 20px 20px; /*top right bottom left*/
 		margin-top: 50px;
 		margin-left: 235px;
-		width: 80%;
+		width: 50%;/* 80%*/
 		max-width: 1200px;
 		min-width: 500px;
 	}
