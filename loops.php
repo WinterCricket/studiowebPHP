@@ -19,17 +19,26 @@
 
 	//while loop
 
-	$x =0;
-	while ($x <= 5) {
+	// $x =0;
+	// while ($x <= 5) {
 		//echo "<h3>the while ... $x</h3>";
-		$x++;
-	}
+	// 	$x++;
+	// 	echo "<h1>$x</h1>";
+	// }
 
 	//for each loop - just for arrays
+	
+
 	$records = array("Houses of the Holy", "Hathaway Live", "Dark Side of the Moon", "When Pa Lived");
-	foreach ($records as $value) {
-		echo "<h3>$value </h3>";
+	$x = -1;
+	
+	while($x < count($records)-1) {
+		$x++;
+		echo "<h1>$x $records[$x]</h1>";
 	}
+	// foreach ($records as $value) {
+	// 	echo "<h3> $x is $value </h3>";
+	// }
 
 
 	?>

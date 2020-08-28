@@ -1,7 +1,7 @@
 <?php 
 
 $message = scandir("C:wamp");
-$var;
+
 
  ?>
 
@@ -19,7 +19,8 @@ $var;
 	<?php 
 
 
-	print_r($message) ;
+	print_r($message);
+
 
 	 ?>
 
