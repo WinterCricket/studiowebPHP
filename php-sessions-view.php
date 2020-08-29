@@ -64,7 +64,7 @@
 
    <?php 
 
-   	$_SESSION[favcar] = "Camry";
+   	$_SESSION["favcar"] = "Camry";
 
    	//unset($_SESSION["favcar"]);
 
