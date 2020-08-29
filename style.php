@@ -133,6 +133,10 @@
 		color: white;
 		background-color: red;
 	}
+
+	.joiner h1 {
+		display: inline;
+	}
 </style>
 
 <h1>CSS Navbars</h1>
