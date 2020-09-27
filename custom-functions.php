@@ -1,15 +1,15 @@
 <?php 
 
 function callAName($name = "idiot"){
-	echo "<h1> Hey, $name, what are you doing?";
+	echo "<h1> Hey, $name, what are you doing?<br>";
 }
 
 function greeting($name = "moron"){
-	return "<h1> You, $name, are now wed to this turnip.";
+	return "<h1> You, $name, are now wed to this turnip.<br>";
 }
 
 function hello($nameFirst = "Dill", $nameLast = "Doe"){
-	return "<h1> You, $nameFirst $nameLast, are still married to a turnp";
+	return "<h1> You, $nameFirst $nameLast, are still married to a turnip<br>";
 }
 
 
@@ -28,9 +28,9 @@ function hello($nameFirst = "Dill", $nameLast = "Doe"){
  	include "style.php";
  	
 
- 	// callAName("Chelsea");
+ 	 callAName("Chelsea");
  	// greeting();
- 	
+ 	echo hello(greeting("Sammy"), "Whampoe");
  	echo greeting(hello());
 
  	 ?>

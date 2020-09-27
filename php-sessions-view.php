@@ -2,7 +2,10 @@
 
 	include "style.php";
 
+	include "php-session.php";
+
 	session_start();
+
 
 	//set session vars
 
@@ -60,7 +63,7 @@
 
   print_r($_SESSION);
    ?>
-   <h2>Use session a variable in a conditional statement</h2>
+   <h2>Use session in a variable in a conditional statement</h2>
 
    <?php 
 
@@ -68,8 +71,22 @@
 
    	//unset($_SESSION["favcar"]);
 
+   	if(isset($_SESSION["favcar"])){
+   		echo "Car has been SET! It is: " . $_SESSION["favcar"];
+   	} else {
+   		echo "Car has not been SET.";
+   		$_SESSION["isAnswered"] = "No";
+   	}
+
     ?>
 
+    <h2>Check in the session with print-r</h2>
+
+    <?php 
+    print_r($_SESSION);
+
+
+     ?>
 
 </body>
 </html>
