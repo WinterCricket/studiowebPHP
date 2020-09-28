@@ -17,8 +17,8 @@ include "style.php";
 
 	<?php 
 
-		$_SESSION["favcolor"] = "<h1 class = 'joiner'>green</h1>";
-		$_SESSION["favanimal"] = "<h1 class = 'joiner'>raven</h1>";
+		$_SESSION["favcolor"] = "green";
+		$_SESSION["favanimal"] = "raven";
 		echo "<h4>Session variables are set.</h4>";
 
 	 ?>

@@ -2,7 +2,7 @@
 
 	include "style.php";
 
-	include "php-session.php";
+	// include "php-session.php";
 
 	session_start();
 
