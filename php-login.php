@@ -33,7 +33,7 @@ session_start();
 		//using Heredoc to echo out form
 			$theForm = <<<THEFORM
 
-			<p>Welcome to Writer Club </p>
+			<h2>Welcome to Writer Club </h2>
 			<h2>Please enter user name and password to log in:</h2>
 
 			<form method = "post" action="login-response.php">
