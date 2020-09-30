@@ -49,6 +49,23 @@ THEFORM;
 		}
 
 		?>
+
+
+		<?phphttp://localhost:php-login.php
+			//using the querystring to return messages to this page
+
+		$isBlock = $_GET["isBlock"];
+		$badUserCredentials = $_GET["badUserCredentials"];
+
+		if(isset($isBlock)) {
+			echo "<h2>You haven't logged in!</h2>";
+			echo "<script>document.getElementById('username').focus();</script>";
+		} else if($badUserCredentials) {
+			echo "<h2>User name OR password is wrong!</h2>";
+			echo "<script>document.getElementById('username').focus();</script>";
+		}
+
+		 ?>
 		</main>
 
 		</body>
