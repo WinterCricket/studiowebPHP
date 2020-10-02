@@ -11,7 +11,7 @@ if(trim($userName) == "Jimmy") {
 	$_SESSION['isLoggedIn'] = true;
 	header('Location: protected-page.php');
 } else {
-	header('Location: login.php?badUserCredentials=true');
+	header('Location: php-login.php?badUserCredentials=true');
 }
 
  ?>

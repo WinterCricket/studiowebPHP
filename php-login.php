@@ -44,14 +44,16 @@ session_start();
 			</form>
 THEFORM;
 
-			echo $theForm;
+echo $theForm;
 
-		}
+}
 
-		?>
+?>
 
 
-		<?phphttp://localhost:php-login.php
+
+
+<?phphttp://localhost:81/studiowebPHP/php-login.php
 			//using the querystring to return messages to this page
 
 		$isBlock = $_GET["isBlock"];
@@ -65,8 +67,8 @@ THEFORM;
 			echo "<script>document.getElementById('username').focus();</script>";
 		}
 
-		 ?>
-		</main>
-
+?>
+		
+</main>
 		</body>
 		</html>
