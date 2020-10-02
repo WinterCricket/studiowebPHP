@@ -7,6 +7,7 @@ session_start();
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="style.php"> -->
 	<title>form processing</title>
 </head>
 <body>
@@ -24,31 +25,30 @@ session_start();
 	<main>
 
 
-
-		<?php 
-		if(isset($session['isLoggedIn'])) {
+<?php 
+	if(isset($session['isLoggedIn'])) {
 		//if the user logged in, don't show form and confuse them
-			echo "<p>You are logged in.</p>";
-		} else{
+		echo "<p>You are logged in.</p>";
+	} else{
 		//using Heredoc to echo out form
-			$theForm = <<<THEFORM
+$theForm = <<<THEFORM
 
-			<h2>Welcome to Writer Club </h2>
-			<h2>Please enter user name and password to log in:</h2>
+<h2>Welcome to Writer Club </h2>
+<h2>Please enter user name and password to log in:</h2>
 
-			<form method = "post" action="login-response.php">
+<form method = "post" action="login-response.php">
 
-				<input type="text" name = "userName" id = "username">
-				<input type="password" name = "password">
-				<input type="submit">
-			</form>
+<input type="text" name = "userName" id = "username">
+<input type="password" name = "password">
+<input type="submit">
+</form>
 THEFORM;
 
 echo $theForm;
 
-}
+		}
 
-?>
+		?>
 
 
 
@@ -56,19 +56,22 @@ echo $theForm;
 <?phphttp://localhost:81/studiowebPHP/php-login.php
 			//using the querystring to return messages to this page
 
-		$isBlock = $_GET["isBlock"];
-		$badUserCredentials = $_GET["badUserCredentials"];
 
-		if(isset($isBlock)) {
-			echo "<h2>You haven't logged in!</h2>";
-			echo "<script>document.getElementById('username').focus();</script>";
-		} else if($badUserCredentials) {
-			echo "<h2>User name OR password is wrong!</h2>";
-			echo "<script>document.getElementById('username').focus();</script>";
-		}
+
+
+if(isset($_GET["isBlock"])){
+	$isBlock = $_GET["isBlock"];
+	echo "<h2>You haven't logged in!</h2>";
+	echo "<script>document.getElementById('username').focus();</script>";
+} else if(isset($_GET["badUserCredentials"])){
+
+$badUserCredentials = $_GET["badUserCredentials"];
+	echo "<h2>User name OR password is wrong!</h2>";
+	echo "<script>document.getElementById('username').focus();</script>";
+}
 
 ?>
-		
+
 </main>
-		</body>
-		</html>
+</body>
+</html>
