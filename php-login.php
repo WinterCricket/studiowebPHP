@@ -65,7 +65,7 @@ if(isset($_GET["isBlock"])){
 	echo "<script>document.getElementById('username').focus();</script>";
 } else if(isset($_GET["badUserCredentials"])){
 
-$badUserCredentials = $_GET["badUserCredentials"];
+	$badUserCredentials = $_GET["badUserCredentials"];
 	echo "<h2>User name OR password is wrong!</h2>";
 	echo "<script>document.getElementById('username').focus();</script>";
 }
