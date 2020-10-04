@@ -29,7 +29,7 @@ session_destroy();
 	</nav>
 
 	<main>
-		<h2 color="red" >You are locked out!</h2>
+		<h2 style="background-color: tomato;" >You are logged out!</h2>
 	</main>
  	
  </body>
