@@ -1,4 +1,5 @@
 
+<style>
 nav, main {display: block;}
 
 body {
@@ -119,3 +120,4 @@ img {float: right; margin: 10px; margin-bottom: 50px; margin-right:20%}
 	}
 
 }
+</style>

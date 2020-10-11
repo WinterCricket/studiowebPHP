@@ -1,5 +1,5 @@
 <?php 
-include "style.php";
+include "simplestyle.php";
 session_start();
 ?>
 <!DOCTYPE html>
